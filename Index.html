@@ -1,10 +1,151 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <style>
+        html, body {
+            height: 110%;
+        }
+        body {
+            min-height: 100vh;
+            background-color: white;
+            color: black;
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            backdrop-filter: blur(30px);
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.8);
+            border: 2px solid rgba(0, 0, 0, 0.4);
+            color: white;
+            padding: 5px 0;
+        }
+        header {
+            backdrop-filter: blur(30px);
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.8);
+            border: 2px solid rgba(0, 0, 0, 0.4);
+            color: black;
+            padding: 5px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1em;
+        }
+
+        .navbar h1 {
+            margin: 0;
+        }
+        .navbar ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1em;
+        }
+        li {
+            display: inline;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1em;
+            
+        }
+
+        .menu li {
+            display: inline;
+        }
+
+        .menu a {
+            color: black;
+            text-decoration: none;
+        }
+
+        #menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: black;
+            font-size: 1.5em;
+        }
+        main {
+            display: flex;
+            flex: 1;
+            min-height: 0;
+        }
+        .fond {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-image: url('logo_photo.jpg');
+            background-color: transparent;
+            opacity: 0.5;
+            background-size: cover;
+            background-position: center;
+        }
+        .couleur {
+            flex: 1;
+            padding: 4rem 3rem;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .couleur h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .couleur h1 strong {
+            color: rgb(37, 37, 253);
+        }
+        .couleur p {
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+            color: black;
+            max-width: 500px;
+        }
+        .couleur p strong {
+            color: rgb(37, 37, 253);
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                background-color: #444;
+                position: absolute;
+                top: 60px;
+                right: 10px;
+                padding: 1em;
+            }
+
+            #menu-toggle {
+                display: block;
+                color: black;
+            }
+        }
+
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - One Vision Photography</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
     <header>
@@ -12,23 +153,43 @@
             <img src="logo_photo.jpg"  alt="Logo One Vision Photography"  height="80">
             <button id="menu-toggle">☰</button>
             <ul id="menu" class="menu">
-                <li><a href="#Accueil">Accueil</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a_propos.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="fond">
-            <img src="logo_photo.jpg" alt="fond">
+            <!-- <img src="logo_photo.jpg" alt="fond"> -->
         </div>
         <div class="couleur">
+            <h1>Bienvenue chez <br><strong>O</strong>ne <strong>V</strong>ision <strong>P</strong>hotography</h1>
+            <p>
+                Une entreprise jeune et dynamique fondée par <strong>4 esprits créatifs</strong> ayant une même vision, passionnés par l’art de capturer des instants uniques. <br>
+                Bien que nouvellement arrivés dans le domaine, nous apportons une touche de créativité à chaque projet, notre mission est d’immortaliser vos plus beaux moments avec authenticité et émotion. <br>
+                Avec une approche personnalisée et un regard innovant, <strong>One Vision Photography</strong> transforme chaque séance photo en une expérience unique et mémorable. <br>
+                Faites confiance à notre passion pour capturer la beauté de l’instant ! <br>
+                <strong>One Vision Photography</strong> est plus qu'une simple entreprise de photographie, c'est une aventure collective où chaque membre apporte sa propre vision et son expertise pour créer des souvenirs inoubliables.
+            </p>
 
+            <!-- <a href="#projects" class="button">Voir les projets</a> -->
         </div>
     </main>
-     <footer>
-        <p>&copy; 2025 Mon Nom</p>
+    <footer>
+        <nav class="navbar">
+            <img src="logo_photo.jpg"  alt="Logo One Vision Photography"  height="80">
+            <p>&copy; 2025 Mon Nom</p>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a_propos.html">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+            </ul>
+        </nav>
     </footer>
     <script src="script.js"></script>
 </body>
