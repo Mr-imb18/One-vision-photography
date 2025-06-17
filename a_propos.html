@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <style>
+
+        .fond {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-image: url('/img/logo_photo.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .fond::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.9);
+            /* noir semi-transparent, ajuste le 0.5 si besoin */
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* Pour que le contenu soit au-dessus du voile */
+        .fond>* {
+            position: relative;
+            z-index: 2;
+        }
+        .tout{
+            border-right: 5px solid black;
+            border-bottom: 5px solid black;
+            padding: 50px;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 30px;
+            box-shadow: 10px 10px 30px rgb(37, 37, 253);
+            text-align: center;
+            
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        h1 strong {
+            color: rgb(37, 37, 253);
+        }
+        .tout h2 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        .tout ul {
+            text-align: center;
+            list-style-position: inside;
+            padding-left: 0;
+            margin: 1em ;
+        }
+        .intro strong, .mission strong, .style strong, .services strong, .portfolio strong, .contact strong {
+            color: rgb(37, 37, 253);
+        }
+        .intro h3, .mission h3{
+            color: rgb(37, 37, 253);
+        }
+        .reseaux i {
+            font-size: 2em;
+            color: rgb(37, 37, 253);
+            margin: 0 10px;
+        }
+        .reseaux i:hover {
+            color: black;
+        }
+        .titre {
+            font-weight: bold;
+            font: 1.2em;
+            text-decoration: double underline;
+        }
+        .btn-realisation {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background-color: rgb(37, 37, 253);
+            color: white;
+            border-radius: 5px;
+            /* transition: background 0.3s; */
+        }
+
+        .btn-realisation:hover {
+            opacity: 0.8;
+            background-color: black;
+
+        }
+        .btn-reservation {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background-color: rgb(37, 37, 253);
+            color: white;
+            border-radius: 5px;
+            /* transition: background 0.3s; */
+        }
+
+        .btn-reservation:hover {
+            opacity: 0.8;
+            background-color: black;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - One Vision Photography</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/logo_photo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="/img/logo_photo.jpg" alt="Logo One Vision Photography" height="80">
+            <button id="menu-toggle">☰</button>
+            <ul id="menu" class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a_propos.html">À propos</a></li>
+                <li><a href="realisation.html">Réalisations</a></li>
+                <li><a href="reservation.html">Réservation</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+
+
+            <h1>À propos de <br><strong>O</strong>ne <strong>V</strong>ision <strong>P</strong>hotography</h1>
+        <div class="tout">
+            <section class="fond">
+                <section class="intro">
+                    <h2>Qui sommes-nous ?</h2>
+
+                    <p>
+                        <h3>Une vision. Quatre regards. Un même battement de cœur.</h3>
+
+                        Depuis nos premiers pas dans l’univers captivant de la photographie, nous <strong>«Stephen, Sally,
+                        Jemima et Britta»</strong> formons One Vision, un collectif uni par une même passion : sublimer l’instant, révéler la
+                        beauté cachée dans chaque regard, chaque geste, chaque émotion. Animés par un amour sincère pour
+                        l’art et portés par une créativité sans cesse renouvelée, nous
+                        façonnons des images qui racontent des histoires. <br>
+
+                        Des clichés qui vibrent. Des vidéos qui résonnent. À
+                        travers notre objectif, les souvenirs prennent vie, les émotions s’ancrent dans le temps, et chaque
+                        détail devient poésie. Jeunes, audacieux, profondément humains, nous mettons notre énergie, notre
+                        sensibilité et notre vision
+                        du monde au service de vos moments précieux. Nos montages vidéo ne se contentent pas d’assembler des
+                        images : ils traduisent une atmosphère, une vérité, une âme. <br>
+
+                        <strong>L’authenticité est notre matière première ;
+                        l’émotion, notre langage.</strong> <br>
+
+                        De la direction artistique à la réalisation, en passant par la retouche fine et soignée, notre
+                        expertise
+                        embrasse chaque étape du processus créatif. Avec exigence, passion et finesse, nous façonnons des
+                        œuvres
+                        à votre image, fidèles à vos rêves, au plus près de ce qui vous rend unique.
+
+                    <h3>Avec One Vision Photography votre histoire devient art.</h3>
+                    </p>
+                </section>
+
+                <section class="mission">
+                    <h2>Notre mission</h2>
+                    <p>
+                        Notre mission est de capturer l’essence même de chaque moment, de transformer les instants éphémères
+                        en souvenirs éternels. <br>
+
+                        <strong>Nous croyons qu’une belle photo ne se contente pas de montrer : elle raconte une histoire, évoque des
+                        émotions et laisse une empreinte indélébile dans le cœur de ceux qui la contemplent. </strong> <br>
+
+                        En alliant créativité, technique et sensibilité, nous nous engageons à offrir des services de
+                        photographie et de vidéographie qui dépassent les attentes, tout en restant fidèles à notre vision
+                        artistique. <br> <br>
+
+                        <h3>Mais alors quel est notre art, quelle est notre signature ?</h3>
+                    </p>
+                </section>
+
+                <section class="style">
+                    <h2>Notre style</h2>
+                    <p>
+                        Notre style se caractérise par une approche authentique et artistique, où chaque image est le fruit
+                        d’une
+                        vision unique. Nous privilégions les couleurs naturelles, les jeux de lumière maîtrisés, les ombres et une attention particulière aux détails,
+                        créant ainsi des œuvres qui résonnent profondément avec ceux qui les regardent. <br>
+
+                        Nous aimons révéler la personnalité de chacun à travers des clichés uniques, à la fois élégants et sincères, capturer des moments spontanés et créer des
+                        atmosphères
+                        qui transportent le spectateur dans un univers visuel riche et évocateur. <br>
+
+                        Notre signature réside dans des séances en extérieur baignées de lumière naturelle aux portraits artistiques en studio, notre approche est toujours personnalisée et créative.
+                        Notre capacité à transformer l’ordinaire en extraordinaire, à révéler la
+                        beauté cachée dans chaque instant, et à raconter des histoires visuelles qui touchent l’âme tout ça fais de nous ce que nous sommes : des artisans de l’image.
+                    </p>
+                </section>
+
+                <section class="services">
+                    <h2>Nos services</h2>
+                    <p>
+                        Nous proposons une gamme complète de services de photographie et de vidéographie adaptés à vos besoins :
+                        <ul>
+                            <li  class="titre">Photographie Evenementielle :</li>
+                                <ul>
+                                    <li>Couverture de mariages & fiancialles</li>
+                                    <li>Baptêmes et communions</li>
+                                    <li>Fêtes et anniversaires</li>
+                                    <li>Autres ceremonies sur demande</li>
+                                </ul>
+                            
+                        </ul>
+                        <ul>
+                            <li  class="titre">Photographie Artistique & Créative :</li>
+                                <ul>
+                                    <li>Portraits artistiques</li>
+                                    <li>Projet photo personnels</li>
+                                </ul>
+                            
+                        </ul>
+                        <ul>
+                            <li  class="titre">Photographie Corporate & Professionnelle :</li>
+                                <ul>
+                                    <li>Portraits professionnels</li>
+                                    <li>Photographie d'équipe & en entreprise</li>
+                                    <li>Contenus pour CV, Linkedin & site web</li>
+                                    <li>Couverture d’événements professionnels</li>
+                                </ul>
+                            
+                        </ul>
+                        <ul>
+                            <li class="titre">Photographie Mode & Beauté :</li>
+                                <ul>
+                                    <li>Séances photo des mannequins</li>
+                                    <li>Photographie Maquillage, coiffure & détails Mode</li>
+                                </ul>
+                            
+                        </ul>
+                        <ul>
+                            <li class="titre">Photographie Lifestyle & Outdoor :</li>
+                                <ul>
+                                    <li>Séances en extérieur</li>
+                                    <li>Photographie de famille</li>
+                                    <li>Photographie de couple</li>
+                                </ul>
+                            
+                        </ul>
+                        <ul>
+                            <li class="titre">Création de Contenus Vidéo :</li>
+                                <ul>
+                                    <li>Montages videos créatifs</li>
+                                    <li>Vidéos d’événements</li>
+                                    <li>Vidéos promotionnelles</li>
+                                </ul>
+                            
+                        </ul>
+                        <ul>
+                            <li class="titre">Services Supplémentaires :</li>
+                                <ul>
+                                    <li>Retouche photo professionnelle & mariages</li>
+                                    <li>Création d'album photo personnalisés</li>
+                                    <li>Direction artistique & stylisme</li>
+                                </ul>
+                            
+                        </ul>
+                </section>
+
+                <section class="portfolio">
+                    <h2>Un aperçu en images ?</h2>
+                    <p>
+                        Parce que les images parlent parfois mieux que les mots, nous vous invitons à découvrir nos realisations.
+                        Vous y trouverez un échantillon de notre travail : des instants capturés avec soin, des émotions vraies, et notre style en action.
+                    </p>
+                    <a href="realisation.html" class="btn-realisation">Accéder au portfolio</a>
+                </section>
+
+                <section class="contact">
+                    <h2>Et maintenant ?</h2>
+                    <p>
+                        <p>
+                            Vous avez un projet ? Une occasion spéciale à immortaliser ? Ou simplement envie de vivre une belle expérience photo ? <br>
+                            Rendez-vous sur réservation pour boucler une séance avec nous :
+                        </p>
+                        <a href="reservation.html" class="btn-reservation">Réservez</a>
+                        <br><br>
+                        <div class="reseaux">
+                            N'hésitez pas à nous suivre sur nos réseaux sociaux pour découvrir nos dernières réalisations et rester informé de notre univers. <br> <br>
+                            <a target="_blank" href="http://wa.me/243893257334" class="lien-icone">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a target="_blank" href="http://wa.me/243893257334" class="lien-icone">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a target="_blank" href="https://www.instagram.com/mr_imb18?igsh=MTBteHk2MDg2aDZ6bA%3D%3D&utm_source=qr" class="lien-icone">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a target="_blank" href="https://x.com/benjimbuku?s=11" class="lien-icone">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div> <br>
+                        <strong>One Vision Photography</strong> est là pour capturer vos plus beaux instants… et les transformer en souvenirs éternels.
+                    </p>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <nav class="navbar">
+            <img src="/img/logo_photo.jpg" alt="Logo One Vision Photography" height="80">
+            <p>&copy; 2025 ONE VISION</p>
+            <ul id="bas" class="bas">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a_propos.html">À propos</a></li>
+                <li><a href="realisation.html">Réalisations</a></li>
+                <li><a href="reservation.html">Réservation</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
