@@ -72,7 +72,7 @@ main {
 .fond {
     flex: 1 1 300px;
     min-height: 250px;
-    background-image: url('/CodeBase/img/accueil.jpg');
+    background-image: url('CodeBase/img/accueil.jpg');
     background-size: cover;
     background-position: center;
     position: relative;

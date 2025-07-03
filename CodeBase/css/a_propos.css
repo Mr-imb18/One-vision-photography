@@ -84,7 +84,7 @@ footer {
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url('/CodeBase/img/logo_photo.jpg');
+    background-image: url('CodeBase/img/logo_photo.jpg');
     background-size: cover;
     background-position: center;
     font-size: 1.2em;
