@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CodeBase/css/reservation.css">
+    <link rel="icon" href="/CodeBase/img/logo_photo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <title>Réservation - One Vision Photography</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="/CodeBase/img/logo_photo.jpg" alt="Logo One Vision Photography" height="80">
+            <button id="menu-toggle">☰</button>
+            <ul id="menu" class="menu">
+                <li><a href="/CodeBase/html/index.html">Accueil</a></li>
+                <li><a href="/CodeBase/html/a_propos.html">À propos</a></li>
+                <li><a href="/CodeBase/html/realisation.html">Réalisations</a></li>
+                <li><a href="/CodeBase/html/reservation.html" class="active">Réservation</a></li>
+                <li><a href="/CodeBase/html/contact_n.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="form-container">
+            <form id="contact-form">
+                <div class="logo">
+                    <img src="/CodeBase/img/logo_photo.jpg" alt="Logo One Vision Photography" height="150">
+                </div>
+                <h1>Fiche de réservation chez <br><strong>O</strong>ne <strong>V</strong>ision
+                    <strong>P</strong>hotography
+                </h1>
+                <label for="nom">Votre nom et prénom</label><br>
+                <input type="text" id="nom" name="nom" required><br><br>
+
+                <label for="email">Votre adresse e-mail</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="date">Date souhaitée</label><br>
+                <input type="date" id="date" name="date"><br><br>
+
+                <label for="type">Quel type de projet avez-vous ?</label><br>
+                <select id="type" name="type" required>
+                    <option value="">-- Sélectionnez --</option>
+                    <option value="photographie_evenementielle">Photographie Evenementielle</option>
+                    <option value="photographie_artistique">Photographie Artistique & Créative</option>
+                    <option value="photographie_corporate">Photographie Corporate & Professionnelle</option>
+                    <option value="photographie_mode_beaute">Photographie Mode & Beauté</option>
+                    <option value="photographie_lifestyle_outdoor">Photographie Lifestyle & Outdoor</option>
+                    <option value="creation_contenus_video">Création de Contenus Vidéo</option>
+                    <option value="autre">Autre</option>
+                </select><br><br>
+
+                <label for="message">Décrivez-nous ce que vous imaginez, ressentez, rêvez…</label><br>
+                <textarea id="message" name="message" rows="6" required
+                    placeholder="Plus vous nous en dites, mieux nous pourrons vous accompagner."></textarea><br><br>
+
+                <button type="submit">Réservez</button>
+            </form>
+
+            <div id="confirmation-message">
+                <p>💌 Merci pour votre message.<br>Nous vous répondrons très bientôt, avec attention et émotion.</p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <nav class="navbar">
+            <img src="/CodeBase/img/logo_photo.jpg" alt="Logo One Vision Photography">
+            <p>&copy; 2025 ONE VISION</p>
+            <div class="reseaux">
+                <span>Passez par nos réseaux pour plus de détails.</span>
+                <a target="_blank" href="http://wa.me/+243990624273"
+                    class="lien-icone"> <i class="fab fa-whatsapp"></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/one_vision_groupe?igsh=MWxtZnV0a3RkdWFzOQ=="
+                    class="lien-icone">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a target="_blank" href="https://vm.tiktok.com/ZMSPjAvRt/" class="lien-icone">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="/CodeBase/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="/CodeBase/js/reservation.js"></script>
+
+</body>
+
+</html>

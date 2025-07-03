@@ -1,0 +1,168 @@
+html,
+body {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+}
+
+header,
+footer {
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    padding: 5px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+}
+
+.navbar img {
+    height: 60px;
+}
+
+.navbar ul li a.active {
+    background: rgb(37, 37, 253);
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+}
+
+.contact-section {
+    background: #fff;
+    padding: 40px 20px;
+    max-width: 700px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgb(37, 37, 253);
+    text-align: center;
+}
+
+.contact-section h1 {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.contact-section p {
+    color: #444;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+.contact-infos {
+    margin-top: 35px;
+    font-size: 50px;
+}
+
+.contact-infos a {
+    color: rgb(37, 37, 253);
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 2em;
+    transition: color 0.2s;
+}
+
+.contact-infos a:hover {
+    color: black;
+}
+
+.contact-infos a.noir {
+    color: black;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 2em;
+    transition: color 0.2s;
+}
+
+.contact-infos a:hover.noir {
+    color: rgb(37, 37, 253);
+}
+
+.contact-section h1 strong {
+    color: rgb(37, 37, 253);
+    font-size: 2.2em;
+}
+
+@media screen and (max-width: 800px) {
+
+    html,
+    body {
+        height: auto;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        background: white;
+        padding: 1rem;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .navbar {
+        align-items: flex-start;
+    }
+
+    .navbar {
+
+        align-items: flex-start;
+    }
+
+    .contact-section {
+        padding: 10px 5px;
+    }
+    .contact-section h1 {
+        font-size: 2em;
+    }
+    .contact-section p {
+        font-size: 1.2em;
+    }
+    .contact-infos {
+        font-size: 30px;
+    }
+    .contact-infos a {
+        font-size: 1.5em;
+    }
+}

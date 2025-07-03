@@ -1,0 +1,232 @@
+html,
+body {
+    height: 110%;
+}
+
+body {
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    padding: 5px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+}
+
+.navbar img {
+    height: 60px;
+}
+
+.navbar ul li a.active {
+    background: rgb(37, 37, 253);
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+}
+
+.reseaux {
+    gap: 1rem;
+    align-items: center;
+}
+
+.reseaux i {
+    font-size: 2em;
+    color: rgb(37, 37, 253);
+    margin: 0 10px;
+}
+
+.reseaux i:hover {
+    color: black;
+}
+
+.fond {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('/CodeBase/img/logo_photo.jpg');
+    background-size: cover;
+    background-position: center;
+    font-size: 1.2em;
+}
+
+.fond::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.fond>* {
+    position: relative;
+    z-index: 2;
+}
+
+.tout {
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    padding: 50px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 30px rgb(37, 37, 253);
+    text-align: center;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h1 strong {
+    color: rgb(37, 37, 253);
+}
+
+.tout h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.tout ul {
+    text-align: center;
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 1em;
+}
+
+.intro strong,
+.mission strong,
+.style strong,
+.services strong,
+.portfolio strong,
+.contact strong {
+    color: rgb(37, 37, 253);
+}
+
+.intro h3,
+.mission h3 {
+    color: rgb(37, 37, 253);
+}
+
+.titre {
+    font-weight: bold;
+    font: 1.2em;
+    text-decoration: double underline;
+}
+
+.btn-realisation {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: rgb(37, 37, 253);
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-realisation:hover {
+    opacity: 0.8;
+    background-color: black;
+
+}
+
+.btn-reservation {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: rgb(37, 37, 253);
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-reservation:hover {
+    opacity: 0.8;
+    background-color: black;
+
+}
+@media screen and (max-width: 800px) {
+    
+html,
+    body {
+        height: auto;
+    }
+    
+
+    #menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        background: white;
+        padding: 1rem;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+   .navbar {
+        align-items: flex-start;
+    }
+    .navbar {
+        
+        align-items: flex-start;
+    }
+    .reseaux {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 0.85rem;
+    }
+    .tout {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+}
